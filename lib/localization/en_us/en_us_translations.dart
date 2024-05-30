@@ -11,6 +11,7 @@
 
 "lbl_email_or_phone": "Email or Phone",
   "lbl_google": "Google",  
+  "lbl_facebook": "Facebook", 
 "lbl_or_login_with": "Or login with",
 "lbl_register_now": "Register Now",
 

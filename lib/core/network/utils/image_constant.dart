@@ -8,8 +8,8 @@ class ImageConstant {
   static String imgDeliveryVanDr = '$imagePath/delivery-van-driver.png';
 
   // Sign in-Three images
-  static String imgImage1605 = '$imagePath/img_image_160.png';
-  static String imgImage1606 = '$imagePath/img_image_1606.png';
+  static String imgImage1605 = '$imagePath/fb.png';
+  static String imgImage1606 = '$imagePath/g.png';
 
   // Registration - Four images
   static String imgArrowDown = '$imagePath/img_arrow_down.svg';

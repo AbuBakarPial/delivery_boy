@@ -69,20 +69,22 @@ class RegistrationFourScreen extends GetWidget<RegistrationFourController> {
                   SizedBox(height: 25.v),
                   _buildNextButton(),
                   SizedBox(height: 10.v),
-                  RichText(
-                    text: TextSpan(
-                      children: [
-                        TextSpan(
-                          text: "msg_already_a_member2".tr,
-                          style: CustomTextStyles.bodyMediumPrimaryContainer,
-                        ),
-                        TextSpan(
-                          text: "lbl_login".tr,
-                          style: CustomTextStyles.bodyMediumPrimary15,
-                        )
-                      ],
+                  GestureDetector(
+                    child: RichText(
+                      text: TextSpan(
+                        children: [
+                          TextSpan(
+                            text: "msg_already_a_member2".tr,
+                            style: CustomTextStyles.bodyMediumPrimaryContainer,
+                          ),
+                          TextSpan(
+                            text: "lbl_login".tr,
+                            style: CustomTextStyles.bodyMediumPrimary15,
+                          )
+                        ],
+                      ),
+                      textAlign: TextAlign.left,
                     ),
-                    textAlign: TextAlign.left,
                   ),
                   SizedBox(height: 8.v)
                 ],
@@ -163,8 +165,16 @@ class RegistrationFourScreen extends GetWidget<RegistrationFourController> {
   }
 
   Widget _buildNextButton() {
+    Get.toNamed(
+      AppRoutes.registrationFiveScreen,
+    );
+    //print("clicked");
     return CustomElevatedButton(
       text: "lbl_next".tr,
+
+      //onPressed: () => RegistrationFiveScreen(),
     );
+
+    //print("clicked");
   }
 }

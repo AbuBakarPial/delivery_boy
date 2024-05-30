@@ -2,6 +2,8 @@ export 'binding/binding.dart';
 export 'controller/controller.dart';
 export 'models/models.dart';
 import 'package:delivery_boy/presentation/presentation.dart';
+import 'package:delivery_boy/presentation/sign_in_three_screen/sign_in_three_screen.dart';
+import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class RegistrationFiveScreen extends GetWidget<RegistrationFiveController> {
@@ -90,23 +92,28 @@ class RegistrationFiveScreen extends GetWidget<RegistrationFiveController> {
                   ),
                   SizedBox(height: 54.v),
                   CustomElevatedButton(
+                    onPressed: () => Get.offNamed(AppRoutes.signInThreeScreen),
                     text: "lbl_register".tr,
                   ),
                   SizedBox(height: 10.v),
-                  RichText(
-                    text: TextSpan(
-                      children: [
-                        TextSpan(
-                          text: "msg_already_a_member2".tr,
-                          style: CustomTextStyles.bodyMediumPrimaryContainer,
-                        ),
-                        TextSpan(
-                          text: "lbl_login".tr,
-                          style: CustomTextStyles.bodyMediumPrimary15,
-                        )
-                      ],
+                  InkWell(
+                   onTap: ()=> Get.toNamed(AppRoutes.signInThreeScreen),     
+                     child: RichText(
+                      text: TextSpan(
+                        children: [
+                          TextSpan(
+                            text: "msg_already_a_member2".tr,
+                            style: CustomTextStyles.bodyMediumPrimaryContainer,
+                          ),
+                          
+                          TextSpan(
+                            text: "lbl_login".tr,
+                            style: CustomTextStyles.bodyMediumPrimary15,
+                          )
+                        ],
+                      ),
+                      textAlign: TextAlign.left,
                     ),
-                    textAlign: TextAlign.left,
                   ),
                   SizedBox(height: 5.v)
                 ],

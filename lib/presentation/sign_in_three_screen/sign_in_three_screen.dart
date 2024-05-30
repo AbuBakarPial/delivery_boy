@@ -170,11 +170,11 @@ class SignInThreeScreen extends GetWidget<SignInThreeController> {
     );
   }
 
-  Widget _buildGoogleButton1() {
+  Widget _buildGoogleButton() {
     return Expanded(
       child: CustomOutlinedButton(
         height: 46.v,
-        text: "lbl_google".tr,
+        text: "Facebook".tr,
         margin: EdgeInsets.only(right: 8.h),
         leftIcon: Container(
           margin: EdgeInsets.only(right: 10.h),
@@ -189,7 +189,7 @@ class SignInThreeScreen extends GetWidget<SignInThreeController> {
     );
   }
 
-  Widget _buildGoogleButton2() {
+  Widget _buildFacebookButton() {
     return Expanded(
       child: CustomOutlinedButton(
         height: 46.v,
@@ -211,7 +211,7 @@ class SignInThreeScreen extends GetWidget<SignInThreeController> {
   Widget _buildRowgoogle() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: [_buildGoogleButton1(), _buildGoogleButton2()],
+      children: [_buildFacebookButton(), _buildGoogleButton() ],
     );
   }
 
